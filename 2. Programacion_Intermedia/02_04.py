@@ -1,1 +1,4 @@
-# Archivo generado automáticamente
+import pandas as pd
+
+df = pd.read_csv('temperaturas.csv', delimiter=",")
+print(df)
