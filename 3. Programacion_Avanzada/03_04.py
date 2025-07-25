@@ -3,7 +3,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-archivo = 'empleados.csv'
+archivo = 'data/empleados.csv'
 df_empleados = pd.read_csv(archivo, delimiter=",")
 
 print("Dataframe original:")
@@ -13,4 +13,5 @@ df_empleados['Edad'].hist(bins=5, edgecolor='black', grid=False)
 plt.title('Distribución de edades')
 plt.xlabel('Grupos de edad')
 plt.ylabel('Frecuencia')
+plt.savefig('images/histograma_edades.png')
 plt.show()
